@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Title</title>
+    <style>
+
+
+
+        *{
+            font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+            color: #859085;
+            font-size: 18px;
+            margin: 0;
+            padding: 0;
+        }
+        .fixed{
+            position: absolute;
+            bottom: 30px;
+        }
+
+        section{
+            width: 100%;
+        }
+
+        .text-center{
+            text-align: center;
+            display: block;
+            width: 100%;
+        }
+
+        img{
+            width: 40px;
+            height: 40px;
+            background-size: 40px;
+            border-radius: 20px;
+        }
+
+        .wechat{
+            background: url("images/ic_weixin_login_pressed.png") no-repeat;
+            background-size: 40px;
+        }
+
+        .wechat:active{
+            background: url("images/ic_weixin_login_pressed_night.png");
+            background-size: 40px;
+        }
+
+        .qq{
+            background: url("images/qq_sdk_login.png") no-repeat;
+            background-size: 40px;
+        }
+
+        .qq:active{
+            background: url("images/qq_select_press.png");
+            background-size: 40px;
+        }
+
+        .weibo{
+            background: url("images/ic_weibo_login_pressed.png") no-repeat;
+            background-size: 40px;
+        }
+
+        .weibo:active{
+            background: url("images/ic_weibo_login_pressed_night.png");
+            background-size: 40px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<section class="fixed">
+    <p class="text-center">-------分享到-------</p>
+    <section style="display: flex;margin-top: 20px;">
+        <div style="flex-grow: 1;" >
+            <img class="wechat" style="margin-left: 50%; position: relative;left: -20px;"/>
+        </div>
+
+        <div style="flex-grow: 1.5">
+            <img class="qq" style="margin-left: 50%; position: absolute;left: -20px;"/>
+        </div>
+        <div style="flex-grow: 1;">
+            <img class="weibo" style="margin-left: 50%; position: relative;left: -20px;"/>
+        </div>
+    </section>
+</section>
+
+</body>
+</html>
